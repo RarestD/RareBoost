@@ -1,14 +1,13 @@
 
 # 🌟 RareBoost – Discord Automated Messaging Tool
 
-RareBoost is a JavaFX desktop app for automating Discord messages via bot API. Users can manage multiple tasks, customize messages and delays, and control them with a modern GUI. Featuring token persistence, multithreading, and real-time status, it's ideal for efficient Discord bot automation.
+RareBoost is a JavaFX desktop app for automating Discord messages via Discord API. Users can manage multiple tasks, customize messages and delays, and control them with a modern GUI. Featuring token persistence, multithreading, and real-time status, it's ideal for efficient Discord bot automation.
 
 ## 🚀 Overview
-RareBoost empowers users to manage and execute automated message-sending tasks to Discord via a GUI. Users can log in with a bot token, manage multiple tasks, configure message content, and control delays — all within a modern, responsive interface.
+RareBoost empowers users to manage and execute automated message-sending tasks to Discord via a GUI. Users can log in with a token, manage multiple tasks, configure message content, and control delays — all within a modern, responsive interface.
 
 ## ✨ Features
 - 🎨 Intuitive GUI built with JavaFX and FXML
-- 🔐 Persistent Token Storage for seamless login experience
 - ⚙️ Multi-task System: Create, edit, start, and stop individual or multiple message tasks (Constellations)
 - ⏱️ Custom Delay Settings per task
 - 📊 Real-time Status Monitoring
@@ -64,7 +63,8 @@ RareBoost/
    mvn javafx:run
    ```
 
-3. Enter your Discord bot token in the login screen. The token will be saved for future sessions.
+3. Enter your Discord user token, channel ID, and delay.
+4. Alternatively you can run the .jar in the target folder
 
 ## 🛠️ Future Improvements
 - Cloud-based configuration sync
@@ -81,10 +81,7 @@ This project demonstrates:
 - Initiative in building practical and relevant tools
 
 ## 👨‍💻 Author
-- Nama: [Nama Kamu]
-- GitHub: [GitHub URL]
-- LinkedIn: [LinkedIn URL]
-- Email: [Email Kamu]
-
-## 📄 License
-Licensed under the MIT License.
+- Nama: Darren Ardhianata
+- GitHub: [RarestD](https://github.com/RarestD)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/darren-ardhianata-889b97226)
+- Email: [ardiandarren6@gmail.com]
