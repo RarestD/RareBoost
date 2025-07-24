@@ -20,7 +20,7 @@ RareBoost empowers users to manage and execute automated message-sending tasks t
 |------------------|------------------------------------------|
 | Java 11+         | Core programming language                |
 | JavaFX 17+       | GUI framework with FXML                  |
-| JDA              | Java Discord API                         |
+| Spring           | To send request to discord API           |
 | Maven            | Build and dependency management          |
 | MaterialFX       | UI Component Library for JavaFX          |
 | IntelliJ IDEA    | IDE for development                      |
