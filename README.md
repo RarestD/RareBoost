@@ -53,7 +53,7 @@ RareBoost/
 ### Steps
 1. Clone the repo:
    ```bash
-   git clone https://github.com/namamu/RareBoost.git
+   git clone https://github.com/RarestD/RareBoost.git
    cd RareBoost
    ```
 
