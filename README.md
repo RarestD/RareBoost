@@ -1,18 +1,13 @@
-# RareBoost
-RareBoost is a JavaFX desktop app for automating Discord messages via Discord API. Users can manage multiple tasks, customize messages and delays, and control them with a modern GUI. multithreading, and real-time status, it's ideal for efficient Discord bot automation
-
-🌟 RareBoost – Discord Automated Messaging Tool
-A fully featured JavaFX Desktop Application for sending automated messages to Discord channels using JDA (Java Discord API) with an intuitive GUI.
+#🌟 RareBoost – Discord Automated Messaging Tool
+A fully featured JavaFX Desktop Application for sending automated messages to Discord channels using Discord API with an intuitive GUI.
 
 🚀 Overview
-RareBoost empowers users to manage and execute automated message-sending tasks to Discord via a GUI. Users can log in with a bot token, manage multiple tasks, configure message content, and control delays — all within a modern, responsive interface.
+RareBoost empowers users to manage and execute automated message-sending tasks to Discord via a GUI. Users can log in with a users token, manage multiple tasks, configure message content, and control delays — all within a modern, responsive interface.
 
 This project showcases a blend of JavaFX GUI development, API integration, and concurrent task management — ideal for demonstrating software engineering skills.
 
 ✨ Features
 🎨 Intuitive GUI built with JavaFX and FXML
-
-🔐 Persistent Token Storage for seamless login experience
 
 ⚙️ Multi-task System: Create, edit, start, and stop individual or multiple message tasks (called Constellations)
 
