@@ -48,7 +48,6 @@ RareBoost/
 ### Prerequisites
 - Java 11+
 - Maven
-- Discord Bot Token
 
 ### Steps
 1. Clone the repo:
@@ -65,6 +64,17 @@ RareBoost/
 
 3. Enter your Discord user token, channel ID, and delay.
 4. Alternatively you can run the .jar in the target folder
+
+
+## Run Executor
+### Prerequisites
+- Java 11+
+- Maven
+
+### Details
+This folder github only for the logic and if you want to use the APP you can download the jar from here
+[JAR FILE](https://drive.google.com/drive/folders/1B0TF6yykC6gTTi7mL-VMAilOo-fL4YOU?usp=sharing)
+download the jar and run it
 
 ## 🛠️ Future Improvements
 - Cloud-based configuration sync
