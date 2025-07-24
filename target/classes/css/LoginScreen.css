@@ -1,0 +1,54 @@
+#usernameFields{
+    -fx-border-color: linear-gradient(to right bottom, #7b6efa, #7e74ef, #827be5, #8581da, #8887cf, #8c8dc4, #8f94ba, #929aaf, #96a0a4, #99a79a, #9cad8f, #a0b384, #a3b979, #a6c06f, #aac664, #adcc59, #b0d34f, #b4d944, #b7df39, #bae52e, #beec24, #c1f219);
+    -fx-text-size: 24px;
+}
+
+#passwordFields{
+    -fx-border-color: linear-gradient(to right bottom, #7b6efa, #7e74ef, #827be5, #8581da, #8887cf, #8c8dc4, #8f94ba, #929aaf, #96a0a4, #99a79a, #9cad8f, #a0b384, #a3b979, #a6c06f, #aac664, #adcc59, #b0d34f, #b4d944, #b7df39, #bae52e, #beec24, #c1f219);
+    -fx-text-size: 24px
+}
+
+#passwordFields .floating-text{
+    -fx-text-fill: #528265;
+    -fx-font-weight: bold;
+}
+
+#bggrid{
+    -fx-background-color: linear-gradient(to bottom, #191825, #865DFF);
+}
+
+#usernameFields .floating-text{
+    -fx-text-fill: #528265;
+    -fx-font-weight: bold;
+}
+
+#mainPane{
+    -fx-border-radius: 25px;
+}
+
+#loginButton{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #4A6D4E
+}
+
+#info{
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-font-weight: bold;
+    -fx-font-family: "Roboto Regular";
+}
+
+.mfx-button {
+    -fx-font-size : 16px;
+    -fx-font-family: 'Visby Round CF Medium';
+    -fx-text-fill: -mfx-text-he;
+    -fx-font-weight: bold;
+}
+
+.mfx-button .mfx-ripple-generator {
+    -mfx-ripple-radius: 40;
+    -mfx-auto-clip: true;
+}
+
+.mfx-button .text {
+    -fx-font-smoothing-type: lcd;
+}

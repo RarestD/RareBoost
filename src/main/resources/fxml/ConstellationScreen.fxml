@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextArea?>
+<VBox id="first_anchor" minHeight="-Infinity" minWidth="-Infinity" prefHeight="986.0" prefWidth="1078.0" stylesheets="@../css/ConstellationScreen.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rare.creations.RareBoost.controllers.ConstellationScreenController">
+   <children>
+      <HBox id="top_layer" fx:id="f_hbox" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="1078.0">
+         <children>
+            <VBox id="v_box" alignment="BOTTOM_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="249.0">
+               <children>
+                  <Label id="auth_text" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="249.0" text="Authorization" />
+                  <MFXPasswordField id="field" fx:id="authField" alignment="CENTER" allowPaste="true" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="249.0" promptText="Type Here" />
+               </children>
+            </VBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="46.0" stroke="BLACK" strokeType="INSIDE" width="4.0">
+               <HBox.margin>
+                  <Insets bottom="18.0" />
+               </HBox.margin>
+            </Rectangle>
+            <VBox id="v_box" alignment="BOTTOM_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="224.0">
+               <children>
+                  <Label id="auth_text" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="224.0" text="Channel" />
+                  <MFXTextField id="field" fx:id="channelId" alignment="CENTER" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#checkInput" prefHeight="51.0" prefWidth="224.0" promptText="Type Here" />
+               </children>
+            </VBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="46.0" stroke="BLACK" strokeType="INSIDE" width="4.0">
+               <HBox.margin>
+                  <Insets bottom="18.0" />
+               </HBox.margin>
+            </Rectangle>
+            <VBox id="v_box" alignment="BOTTOM_CENTER" prefHeight="102.0" prefWidth="300.0">
+               <children>
+                  <Label id="auth_text" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="276.0" text="Delay">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding></Label>
+                  <HBox style="-fx-spacing: 10px;">
+                     <children>
+                        <MFXTextField id="field" fx:id="delayId" alignment="CENTER" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#checkInput" prefHeight="51.0" prefWidth="200.0" promptText="Type Here" />
+                        <MFXComboBox id="combo_box" fx:id="delay_box" accessibleRole="COMBO_BOX" alignment="CENTER" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="76.0" style="-fx-border-color: #999999;" text="S" />
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="20.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="826.0" prefWidth="1078.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="826.0" prefWidth="476.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <Label id="text_message" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="413.0" text="Scheduler ">
+                           <padding>
+                              <Insets left="90.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" layoutY="42.0" prefHeight="247.0" prefWidth="200.0">
+                           <children>
+                              <VBox id="scheduler_box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="341.0" style="-fx-spacing: 29px;">
+                                 <children>
+                                    <HBox fx:id="box_start" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" style="-fx-spacing: 12px;">
+                                       <children>
+                                          <Label id="scheduler_text" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="60.0" text="Start :" />
+                                          <HBox id="timer_box" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="141.0">
+                                             <children>
+                                                <MFXTextField id="time_field" fx:id="startHour" alignment="CENTER" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="42.0" />
+                                                <Label id="time_separate" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="8.0" text=":">
+                                                   <HBox.margin>
+                                                      <Insets bottom="8.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <MFXTextField id="time_field" fx:id="startMinute" alignment="CENTER" floatMode="DISABLED" layoutX="58.0" layoutY="27.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="42.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="box_start1" alignment="CENTER" layoutX="10.0" layoutY="62.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" style="-fx-spacing: 12px;">
+                                       <children>
+                                          <Label id="scheduler_text" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="60.0" text="Stop :" />
+                                          <HBox id="timer_box" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="141.0">
+                                             <children>
+                                                <MFXTextField id="time_field" fx:id="stopHour" alignment="CENTER" floatMode="DISABLED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="42.0" />
+                                                <Label id="time_separate" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="8.0" text=":">
+                                                   <HBox.margin>
+                                                      <Insets bottom="8.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <MFXTextField id="time_field" fx:id="stopMinute" alignment="CENTER" floatMode="DISABLED" layoutX="58.0" layoutY="27.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="42.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="82.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label id="text_message" layoutY="313.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="413.0" text="Delay Range">
+                           <padding>
+                              <Insets left="90.0" />
+                           </padding>
+                        </Label>
+                        <MFXTextField id="field_bottom" fx:id="delayRangeMin" alignment="CENTER" floatMode="DISABLED" layoutX="72.0" layoutY="358.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#checkInput" prefHeight="57.0" prefWidth="111.0" style="-fx-border-width: 0px 0px 2px 0px;" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#999999" height="5.0" layoutX="-9.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="25.0" x="200.0" y="358.0" />
+                        <MFXTextField id="field_bottom" fx:id="delayRangeMax" alignment="CENTER" floatMode="DISABLED" layoutX="226.0" layoutY="358.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#checkInput" prefHeight="57.0" prefWidth="111.0" style="-fx-border-width: 0px 0px 2px 0px;" />
+                        <MFXComboBox id="combo_box" fx:id="delay_range_box" accessibleRole="COMBO_BOX" alignment="CENTER" floatMode="DISABLED" layoutX="345.0" layoutY="360.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="76.0" style="-fx-background-color: #999999; -fx-border-color: #999999;" text="S" />
+                        <MFXToggleButton fx:id="delayRangeToggle" layoutX="238.0" layoutY="310.0" onAction="#onDelayRangeSelected" style="-fx-font-family: &quot;Jura Medium&quot;;" text="Use Delay Range" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </MFXToggleButton>
+                        <MFXToggleButton fx:id="schedulerToggle" layoutX="212.0" layoutY="-3.0" onAction="#onSchedulerSelected" style="-fx-font-family: &quot;Jura Medium&quot;;" text="Use Scheduler" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </MFXToggleButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="125.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="602.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <Label id="text_message" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="550.0" text="Text Message ">
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                        <HBox layoutY="47.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="602.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+                           <children>
+                              <HBox id="message_rectangle" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="529.0">
+                                 <children>
+                                    <HBox id="message_box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="433.0">
+                                       <children>
+                                          <JFXTextArea id="message_area" fx:id="messageText" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="400.0" style="-fx-text-fill: #FFFDFD;" unFocusColor="#4d4d4d00" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutY="503.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.0" prefWidth="602.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="503.0">
+                           <children>
+                              <HBox alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.0" prefWidth="529.0" style="-fx-spacing: 35;">
+                                 <children>
+                                    <VBox alignment="BOTTOM_CENTER" prefHeight="99.0" prefWidth="222.0">
+                                       <children>
+                                          <HBox id="noteBoxesInfo" fx:id="noteBoxes" prefHeight="45.0" prefWidth="200.0">
+                                             <children>
+                                                <Label fx:id="status_label" alignment="CENTER" graphicTextGap="8.0" prefHeight="43.0" prefWidth="206.0" style="-fx-text-fill: #FFFFFF; -fx-font-family: &quot;Jura Medium&quot;;" text="Constellation Stopped">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                   <graphic>
+                                                      <Group autoSizeChildren="false">
+                                                         <children>
+                                                            <SVGPath fx:id="svgImage" content="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H288V368c0-26.5 21.5-48 48-48H448V96c0-35.3-28.7-64-64-64H64zM448 352H402.7 336c-8.8 0-16 7.2-16 16v66.7V480l32-32 64-64 32-32z" fill="#0096c7" scaleX="0.04" scaleY="0.04" scaleZ="0.1" />
+                                                         </children>
+                                                      </Group>
+                                                   </graphic>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <MFXButton id="mfx-button" fx:id="start_button" buttonType="RAISED" minHeight="-Infinity" minWidth="-Infinity" onAction="#onStart" prefHeight="57.0" prefWidth="129.0" text="Start" />
+                                    <MFXButton id="mfx-button" buttonType="RAISED" minHeight="-Infinity" minWidth="-Infinity" onAction="#onStop" prefHeight="57.0" prefWidth="129.0" text="Stop">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </MFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

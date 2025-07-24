@@ -1,0 +1,148 @@
+#first_anchor{
+    -fx-background-color: #1B1E23;
+}
+
+#top_layer{
+    -fx-spacing: 40px;
+}
+
+#v_box{
+    -fx-spacing: 23px;
+}
+
+#auth_text{
+    -fx-font-family: "Jura Medium";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 24px;
+}
+
+#field{
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-font-family: "Jura Regular";
+    -fx-font-size: 18px;
+
+}
+
+#field_bottom{
+    -fx-background-color: #999999;
+    -fx-background-radius: 50px;
+    -fx-border-width: 0px;
+    -fx-border-radius: 50px;
+    -fx-font-family: "Jura Regular";
+    -fx-font-size: 16px;
+
+}
+
+#combo_box{
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-font-family: "Jura Medium";
+    -fx-font-size: 30px;
+}
+
+
+#combo_box .virtual-flow .mfx-combo-box-cell {
+    -fx-background-color: derive(#6F6D6D, 0%);
+    -fx-background-radius: 0px;
+}
+
+#combo_box .virtual-flow .mfx-combo-box-cell:hover {
+    -fx-background-color: #FFFFFF;
+}
+
+#combo_box .virtual-flow .mfx-combo-box-cell:selected {
+    -fx-background-color: #FFFFFF;
+}
+
+
+
+#text_message{
+    -fx-text-fill: #FFBE40;
+    -fx-font-size: 23px;
+    -fx-font-family: "Jura Bold";
+}
+
+#message_rectangle{
+    -fx-background-radius: 50px;
+    -fx-background-color: #999999;
+}
+
+#mfx-button{
+    -fx-font-family: "Jura Bold";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 50px;
+    -fx-background-color: #999999;
+
+}
+
+#message_box{
+    -fx-background-color: #6F6D6D;
+    -fx-background-radius: 50px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 50px;
+    -fx-border-color: #383636;
+}
+
+#message_area{
+    -fx-font-family: "Jura Medium";
+    -fx-font-size: 18px;
+}
+
+#scheduler_box{
+    -fx-background-color: #999999;
+    -fx-background-radius: 30px;
+
+}
+
+#scheduler_text{
+    -fx-font-size: 20px;
+    -fx-font-family: "Jura Medium";
+    -fx-text-fill: #000000;
+}
+
+#timer_box{
+    -fx-background-color: #6F6D6D;
+    -fx-background-radius: 25px;
+    -fx-border-width: 1px;
+    -fx-border-color: #383636;
+    -fx-border-radius: 25px;
+}
+
+#time_separate{
+    -fx-font-family: "Jura Medium";
+    -fx-text-fill: #FFFDFD;
+    -fx-font-size: 20px;
+}
+
+#time_field{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px ;
+    -fx-font-family: "Jura Medium";
+    -fx-text-fill: #FFFDFD;
+    -fx-font-size: 20px;
+}
+
+#noteBoxes{
+    -fx-border-width: 1px solid;
+    -fx-border-radius: 5px;
+    -fx-border-color: #E76F51;
+    -fx-background-color: rgba(231, 111, 81, 0.2);
+}
+
+#noteBoxesInfo{
+    -fx-border-width: 1px solid;
+    -fx-border-radius: 5px;
+    -fx-border-color: #0096C7;
+    -fx-background-color: rgba(0, 150, 199, 0.1);
+}
+
+#noteBoxesRun{
+    -fx-border-width: 1px solid;
+    -fx-border-radius: 5px;
+    -fx-border-color: #00B353;
+    -fx-background-color: rgba(0, 179, 83, 0.1);
+}

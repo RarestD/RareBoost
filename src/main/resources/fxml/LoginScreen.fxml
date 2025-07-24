@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="360.0" stylesheets="@../css/LoginScreen.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rare.creations.RareBoost.controllers.LoginScreenController">
+   <children>
+      <GridPane id="bggrid" prefHeight="500.0" prefWidth="360.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="292.5999816894531" minHeight="10.0" prefHeight="260.8000091552734" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="471.00002136230466" minHeight="10.0" prefHeight="334.39999084472663" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="300.0" prefWidth="600.0">
+               <children>
+                  <ImageView fx:id="logo" fitHeight="278.0" fitWidth="292.0" layoutX="34.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rareboost-logo-removebg.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="underform" fx:id="grid" prefHeight="200.0" prefWidth="380.0" GridPane.rowIndex="1">
+               <children>
+                  <MFXTextField id="usernameFields" fx:id="usernameFields" borderGap="120.0" floatMode="BORDER" floatingText="USERNAME" layoutX="50.0" layoutY="23.0" prefHeight="38.0" prefWidth="266.0" />
+                  <MFXPasswordField id="passwordFields" fx:id="passwordFields" borderGap="120.0" floatMode="BORDER" floatingText="PASSWORD" layoutX="50.0" layoutY="81.0" prefHeight="38.0" prefWidth="266.0" />
+                  <MFXButton id="loginButton" fx:id="login" buttonType="RAISED" depthLevel="LEVEL3" layoutX="116.0" layoutY="171.0" onAction="#onLogin" prefHeight="19.0" prefWidth="134.0" text="Login" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </MFXButton>
+                  <Label id="info" fx:id="info" alignment="CENTER" layoutX="17.0" layoutY="131.0" opacity="0.0" prefHeight="23.0" prefWidth="331.0" text="Normal" textFill="#ec0606">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

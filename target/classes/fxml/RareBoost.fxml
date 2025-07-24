@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="first_anchor" fx:id="parent" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1440.0" stylesheets="@../css/RareBoost.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rare.creations.RareBoost.controllers.RareBoostController">
+   <top>
+      <HBox fx:id="stageparent" alignment="TOP_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="1440.0" style="-fx-background-color: #111316;">
+         <children>
+            <VBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="1266.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label id="texttittle" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="150.0" text="RareBoost" textFill="#dfdddd">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Label id="minimizelabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimized_handle" prefHeight="35.0" prefWidth="58.0">
+               <graphic>
+                  <FontAwesomeIcon id="minimizelabel" glyphName="MINUS" glyphStyle="-fx-fill:white" selectionEnd="0" selectionStart="0" size="1.5em" />
+               </graphic>
+            </Label>
+            <Label id="fullscreenlabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#fullscreen_handle" prefHeight="35.0" prefWidth="58.0">
+               <graphic>
+                     </graphic>
+               <graphic>
+                  <FontAwesomeIcon id="fullscreenlabel" glyphName="PLUS" glyphStyle="-fx-fill:white" size="1.5em" />
+               </graphic>
+            </Label>
+            <Label id="closelabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_handle" prefHeight="35.0" prefWidth="58.0" textFill="TRANSPARENT">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" glyphStyle="-fx-fill:white" selectionEnd="0" selectionStart="0" size="1.5em" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox id="left_grid_tab" minHeight="-Infinity" minWidth="-Infinity" prefHeight="986.0" prefWidth="362.0">
+         <children>
+            <HBox id="profile_tab" alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="362.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView id="image_profile" fitHeight="103.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="200.0">
+                     <children>
+                        <Label id="username" alignment="TOP_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" text="Rare">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label id="ticket_pass" fx:id="ticket_pass" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="200.0" text="Interstellar">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Label id="exp_date" alignment="TOP_LEFT" layoutX="10.0" layoutY="60.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="200.0" text="Premium end in 364 Days" />
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="3.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <MFXScrollPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="362.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox id="cons_vbox" fx:id="cons_vbox" minHeight="-Infinity" minWidth="-Infinity" prefWidth="350.0">
+                     <children>
+                        <HBox fx:id="addButton" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefWidth="350.0">
+                           <children>
+                              <HBox id="pluscons" fx:id="pluscons" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#addConstellationTab" prefHeight="58.0" prefWidth="58.0" style="-fx-background-color: radial-gradient(radius 180%, rgba(217,217,217,1), rgba(217,217,217,0.55));">
+                                 <children>
+                                    <FontAwesomeIcon fx:id="iconAdd" glyphName="PLUS" glyphStyle="-fx-fill:black" size="1.5em">
+                                       <HBox.margin>
+                                          <Insets top="1.0" />
+                                       </HBox.margin>
+                                    </FontAwesomeIcon>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" top="30.0" />
+               </padding>
+            </MFXScrollPane>
+            <HBox id="left_bottom_button" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="362.0">
+               <children>
+                  <MFXButton id="start_all_button" buttonType="RAISED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="137.0" rippleRadius="40.0" text="Start All" />
+                  <MFXButton id="stop_all_button" buttonType="RAISED" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="137.0" rippleAnimationSpeed="0.0" rippleColor="#323232" rippleRadius="40.0" text="Stop All" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="centerVbox" alignment="CENTER" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

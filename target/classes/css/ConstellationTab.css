@@ -1,0 +1,4 @@
+#constellationtab{
+    -fx-background-color: linear-gradient(to bottom, #010332 0%, #100328 25%, #070129 45%, #1D0043 75%, #50003E 100%);
+    -fx-background-radius: 0px 40px 40px 0;
+}
